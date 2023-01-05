@@ -67,16 +67,16 @@ function App() {
         <div className="flex flex-col bg-white h-full py-24">
         <div ref={myRef}></div>
           <div className="mx-auto flex flex-col text-center text-4xl font-sans ">
-          <span className="md:text-8xl text-4xl">At EDGE3 we cut the noise. <br></br>We are built on <span className="italic">3</span> things. </span>
-          <div className="flex flex-col text-red-700 mt-12 font-semibold text-gray-800 md:text-7xl text-3xl w-2/3 mx-auto">
-          <span>1. Shared Purpose</span>
-          <span>2. Real Time Intelligence</span>
-          <span>3.Unique insights and absolute prioritization
+          <span className="md:text-8xl text-4xl font-bold">Cut. The. Noise. <br></br><span className="font-normal">We are built on <span className="italic">3</span> things.</span> </span>
+          <div className="flex flex-col text-red-700 mt-24 font-semibold text-gray-800 md:text-7xl text-3xl w-full mx-auto">
+          <span>1.  Shared Purpose</span>
+          <span>2.  Real Time Intelligence</span>
+          <span>3.  Unique insights
 </span>
 </div>
           </div>
           <div className="flex flex-col md:mt-24 mt-12">
-        <div className="md:text-8xl text-4xl font-bold px-8 flex justify-between"><span>Who We Are.</span><span className="text-right text-xl my-auto"><BsArrowDownCircle /></span></div>
+        <div className="md:text-8xl text-4xl font-bold md:px-8 px-1 flex justify-between"><span>Who We Are.</span><span className="text-right text-xl my-auto"><BsArrowDownCircle /></span></div>
          <img src={about} />
       </div>
         </div>
@@ -84,7 +84,7 @@ function App() {
       </div>
     
       <div className="flex flex-row mt-12 bottom-0 pt-4 pb-8 bg-black px-12">
-        <div className="w-full md:text-8xl text-4xl text-white">
+        <div className="w-full md:text-8xl text-6xl text-white">
         <EDGE3 />
           <div className="md:w-3/4 w-full pl-4 mt-4  font-light text-white md:text-xl text-sm">
         EDGE3 is creating the first 
