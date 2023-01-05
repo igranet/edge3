@@ -68,7 +68,7 @@ function App() {
         <div ref={myRef}></div>
           <div className="mx-auto flex flex-col text-center text-4xl font-sans ">
           <span className="text-8xl">At EDGE3 we cut the noise. <br></br>We are built on <span className="italic">3</span> things. </span>
-          <div className="flex flex-col mt-12 font-semibold text-gray-800 text-7xl w-2/3 mx-auto">
+          <div className="flex flex-col text-red-700 mt-12 font-semibold text-gray-800 text-7xl w-2/3 mx-auto">
           <span>1. Shared Purpose</span>
           <span>2. Real Time Intelligence</span>
           <span>3.Unique insights and absolute prioritization
@@ -78,7 +78,7 @@ function App() {
         </div>
       </div>
       <div className="flex flex-col">
-        <div className="text-8xl font-bold px-8">Who We Are.</div>
+        <div className="text-8xl font-bold px-8 flex justify-between"><span>Who We Are.</span><span className="text-right text-2xl my-auto"><BsArrowDownCircle /></span></div>
          <img src={about} />
       </div>
       <div className="flex flex-row mt-12 bottom-0 pt-4 pb-8 bg-black px-12">
