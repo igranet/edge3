@@ -39,19 +39,19 @@ function App() {
   return (
     <div className='w-full h-screen   overflow-y-scroll relative'>
       <div className="flex flex-col">
-      <div className="h-[100vh] flex flex-row bg-black px-4 py-4">
+      <div className="h-[100vh] flex md:flex-row flex-col bg-black px-4 py-4">
       <div className="w-full my-auto text-left flex flex-col">
-        <div className="text-9xl text-white ml-8 -mt-12"><EDGE3 /></div>
+        <div className="md:text-9xl text-6xl text-white ml-8 md:-mt-12"><EDGE3 /></div>
         <div className="text-2xl text-white ml-10 mt-4 italic">The next generation of Athletic Intelligence.</div>
       </div>
       <div className="w-3/4 flex flex-col my-auto text-center text-white">
-        <div className="-mt-24">
+        <div className="md:-mt-24 ">
          {
           tiles.map((key, idx)=>{
             return (
               <div className="flex flex-col text-left mt-6">
-                <div className="text-8xl hover:text-red-400 hover:text-9xl cursor-pointer duration-500">{key?.titleHeader}</div>
-                <div className="text-4xl">{key?.subTitle}</div>
+                <div className="md:text-8xl text-6xl hover:text-red-400 hover:text-9xl cursor-pointer duration-500">{key?.titleHeader}</div>
+                <div className="md:text-4xl text-2xl">{key?.subTitle}</div>
               </div>
             )
           })
@@ -64,27 +64,29 @@ function App() {
       <BsArrowDownCircle onClick={()=>{console.log("Poop"); scrollToRef(myRef)}} className="text-white cursor-pointer text-6xl animate-bounce duration-1000 z-50 -mt-24 mx-auto" />
       </div>
       <div>
-        <div className="flex flex-col bg-white h-[100vh] py-24">
+        <div className="flex flex-col bg-white h-full py-24">
         <div ref={myRef}></div>
           <div className="mx-auto flex flex-col text-center text-4xl font-sans ">
-          <span className="text-8xl">At EDGE3 we cut the noise. <br></br>We are built on <span className="italic">3</span> things. </span>
-          <div className="flex flex-col text-red-700 mt-12 font-semibold text-gray-800 text-7xl w-2/3 mx-auto">
+          <span className="md:text-8xl text-4xl">At EDGE3 we cut the noise. <br></br>We are built on <span className="italic">3</span> things. </span>
+          <div className="flex flex-col text-red-700 mt-12 font-semibold text-gray-800 md:text-7xl text-3xl w-2/3 mx-auto">
           <span>1. Shared Purpose</span>
           <span>2. Real Time Intelligence</span>
           <span>3.Unique insights and absolute prioritization
 </span>
 </div>
           </div>
-        </div>
-      </div>
-      <div className="flex flex-col">
-        <div className="text-8xl font-bold px-8 flex justify-between"><span>Who We Are.</span><span className="text-right text-2xl my-auto"><BsArrowDownCircle /></span></div>
+          <div className="flex flex-col md:mt-24 mt-12">
+        <div className="md:text-8xl text-4xl font-bold px-8 flex justify-between"><span>Who We Are.</span><span className="text-right text-xl my-auto"><BsArrowDownCircle /></span></div>
          <img src={about} />
       </div>
+        </div>
+        
+      </div>
+    
       <div className="flex flex-row mt-12 bottom-0 pt-4 pb-8 bg-black px-12">
-        <div className="w-full text-8xl text-white">
+        <div className="w-full md:text-8xl text-4xl text-white">
         <EDGE3 />
-          <div className="w-3/4 pl-4 mt-4  font-light text-white text-xl">
+          <div className="md:w-3/4 w-full pl-4 mt-4  font-light text-white md:text-xl text-sm">
         EDGE3 is creating the first 
         Athlete Management System 
         with all the tools necessary for 
